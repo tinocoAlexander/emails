@@ -8,7 +8,7 @@ dotenv.config();
 export async function userEvents() {
   try {
     const connection = await amqp.connect({
-          protocol: 'amqp',
+          protocol: 'amqps',
           hostname: process.env.RABBITMQ_URL,
           port: 5672,
           username: process.env.RABBITMQ_USER,
